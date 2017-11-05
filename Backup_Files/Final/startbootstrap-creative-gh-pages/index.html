@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Coates Bros</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Permanent+Marker|Roboto+Condensed" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+    var checkTime = function () {
+    var now = new Date();
+    var timeDiv = document.getElementById('timeDiv');
+    var messageDiv = document.getElementById('messageDiv');
+    timeDiv.innerHTML = now.toString();
+
+    var dayOfWeek = now.getDay(); // 0 = Sunday, 1 = Monday, ... 6 = Saturday
+    var hour = now.getHours(); // 0 = 12am, 1 = 1am, ... 18 = 6pm
+
+    // check if it's a weekday between 8am and 5pm
+    if (dayOfWeek > 0 && dayOfWeek < 6 && hour > 7 && hour < 17) {
+        messageDiv.innerHTML = 'Yes, we\'re open!';
+        messageDiv.className='open';
+    }
+    else {
+        messageDiv.innerHTML = 'Sorry, we\'re closed!';
+        messageDiv.className='closed';
+    }
+};
+
+setInterval(checkTime, 1000);
+checkTime();
+</script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100824668-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll home" href="#page-top">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="first nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll about" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll services" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll contact" href="#formVal">Registration</a>
+                    </li>
+                    <li>
+                      <a class="page-scroll contact" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading"></h1>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+                <p class="hci-inner"></p>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Cooper Tire!</h2>
+
+                    <hr class="light">
+                    <p class="text-faded">Family owned business with ASE certified technicians to service all of your automotive needs, from inspections, to oil changes, to tires and much more!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<section>
+  <h2 class="section-heading">Hours</h2>
+  <hr class="light" id="second-light">
+  <ul>Monday-Friday 8am to 5pm</ul>
+
+
+    <div id="timeDiv"></div>
+    <div id="messageDiv"></div>
+
+</section>
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+
+                                </div>
+                                <div class="project-name">
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                    <section class="no-padding" id="banner">
+                        <div class="container-fluid">
+                            <div class="row no-gutter popup-gallery">
+                                <div class="col-lg-12">
+                                    <a href="img/banner.jpg" class="portfolio-box">
+                                        <img src="img/banner.jpg" class="img-responsive" alt="">
+                                        <div class="portfolio-box-caption">
+                                            <div class="portfolio-box-caption-content">
+                                                <div class="project-category text-faded">
+
+                                                </div>
+                                                <div class="project-name">
+                                                    We Even Have Old School Signs!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                      <br></br>
+                      <br></br>
+
+
+                      <p>We offer competative prices for our lube, oil, and filter service as well as almost anything you need worked on under the hood.  Our tire prices are hard to beat and mixed with our fast service times, coming to Coates Brothers is a no brainer
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="formVal">
+      <div id="emptyDiv"></div>
+<div id="description"></div>
+<!--container start-->
+<div id="container">
+  <div id="container_body">
+    <div>
+      <h2 class="form_title">Cooper Tire Email Registration</h2>
+      <p class="head_para">Keep up to Date on Prices!</p>
+    </div>
+    <!--Form  start-->
+    <div id="form_name">
+      <div class="firstnameorlastname">
+       <form name="form" >
+       <div id="errorBox"></div>
+        <input type="text" name="Name" value="" placeholder="First Name"  class="input_name" >
+        <input type="text" name="LastName" value="" placeholder="Last Name" class="input_name" >
+
+      </div>
+      <div id="email_form">
+        <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email">
+      </div>
+      <div id="Re_email_form">
+        <input type="text" name="enterEmail" value=""  placeholder="Re-enter Email" class="input_Re_email">
+      </div>
+      <div id="password_form">
+        <input type="password" name="Password" value=""  placeholder="New Password" class="input_password">
+      </div>
+      <!--birthday details start-->
+      <div>
+        <h3 class="birthday_title">Birthday</h3>
+      </div>
+      <div>
+        <select name="birthday_month" >
+          <option value="" selected >Month</option>
+          <option value="1">Jan</option>
+          <option value="2">Feb</option>
+          <option value="3">Mar</option>
+          <option value="4">Apr</option>
+          <option value="5">May</option>
+        </select>
+        &nbsp;&nbsp;
+        <select name="birthday_day" >
+          <option value="" selected>Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        &nbsp;&nbsp;
+        <select name="birthday_year">
+          <option value="" selected>Year</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+        </select>
+      </div>
+      <!--birthday details ends-->
+      <div id="radio_button">
+        <input type="radio" name="radiobutton" value="Female">
+        <label >Female</label>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="radiobutton" value="Male">
+        <label >Male</label>
+      </div>
+       <div>
+        <p id="sign_user" onClick="Submit()">Sign Up </p>
+      </div>
+     </form>
+    </div>
+    <!--form ends-->
+  </div>
+</div>
+<!--container ends-->
+
+
+
+
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact Info</h2>
+                    <hr class="primary">
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>314-647-2334</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">coatesbros@gmail.com</a></p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-facebook-official fa-3x sr-contact" style="font-size:36px"></i>
+                      <p><a href="https://www.facebook.com/coatesbrothersautostl/">Coates Brothers Facebook</a><p>
+                      </div>
+                <div class="col-lg-4 col-lg-offset-0 text-center">
+                    <i class="fa fa-map-marker fa-3x sr-contact" style="font-size:36px"></i>
+                    <p>6405 Manchester Ave, St. Louis, MO 63139</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+    <script src="js/registration.js"></script>
+
+</body>
+
+</html>
